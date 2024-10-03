@@ -1,1 +1,1 @@
-## This is Stck Analyzer project
+## This is Stock Analyzer project
