@@ -21,7 +21,7 @@ try:
         if stock_price:
             current_price = stock_price.text.strip()
             if current_price != old_price:
-                # Any 
+                # Any Changes shall be put in this 
                 print(f"Current Price: {current_price}")
                 old_price = current_price
             else:
