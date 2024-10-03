@@ -4,7 +4,7 @@ import time
 
 driver = webdriver.Chrome()  
 
-old_price = None  
+old_price = None
 
 try:
     url = 'https://www.equitypandit.com/historical-data/RELIANCE'
