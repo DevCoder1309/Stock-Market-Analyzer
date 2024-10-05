@@ -6,11 +6,7 @@ driver = webdriver.Chrome()
 
 try:
     url = 'https://www.equitypandit.com/historical-data/RELIANCE'
-    
     driver.get(url)
-        
-    time.sleep(5)  
-        
     soup = BeautifulSoup(driver.page_source, 'html.parser')
 
     stock_open_price = soup.find('p', {'id': 'BSE_OPEN_PRICE'})
