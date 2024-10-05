@@ -21,6 +21,7 @@ try:
 
         stock_open_new_price = stock_open_price.text.strip()
         stock_open_new_high_low = stock_high_low_price.text.strip()
+        stock_volume = soup.find('p', {'id', 'BSE_VOLUME'}).text.strip()
 
         arr = list(stock_open_new_high_low.split(' / '))
         print(arr)
