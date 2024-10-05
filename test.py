@@ -17,7 +17,7 @@ try:
 
         stock_open_price = soup.find('p', {'id': 'BSE_OPEN_PRICE'})
         stock_high_low_price = soup.find('p', {'id': 'BSE_TODAYS_HIGH_LOW'})
-        stock_volume = soup.find('p', {'p', })
+        stock_volume = soup.find('p', {'', })
 
         stock_open_new_price = stock_open_price.text.strip()
         stock_open_new_high_low = stock_high_low_price.text.strip()
