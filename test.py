@@ -21,10 +21,7 @@ try:
         stock_open_new_high_low = stock_high_low_price.text.strip()
 
         if (stock_open_price and stock_high_low_price):
-            print(f"Current Price: {stock_open_new_price}")
-            
-            else:
-                print(f"Price remains the same: {stock_open_new_price}")
+            print(f"Current Price: {stock_open_new_price}, {stopen}")
         else:
             print("Stock price not found.")
         
