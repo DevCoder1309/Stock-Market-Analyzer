@@ -4,8 +4,6 @@ import time
 
 driver = webdriver.Chrome()  
 
-old_price = None
-
 try:
     url = 'https://www.equitypandit.com/historical-data/RELIANCE'
     
@@ -20,7 +18,7 @@ try:
         stock_high_low_price = soup.find('p', {'id': 'BSE_TODAYS_HIGH_LOW'})
 
         if (stock_open_price and stock_high_low_price):
-            stock_open_new_price = stock_open_price.text.strip()
+            
             stock_open_new_high_low = stock_high_low_price.text.strip()
             if stock_open_new_price != old_price or stock_open_new_high_low != :
                 # Any Changes chall be reflected here and price prediction should be placed here
