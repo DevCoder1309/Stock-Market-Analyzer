@@ -17,7 +17,7 @@ try:
         soup = BeautifulSoup(driver.page_source, 'html.parser')
 
         stock_price = soup.find('p', {'id': 'BSE_OPEN_PRICE'})
-        stock_price = soup.find('p', {'id': 'BSE_OPEN_PRICE'})
+        stock_current_price = soup.find('p', {'id': 'BSE_OPEN_PRICE'})
 
         if stock_price:
             current_price = stock_price.text.strip()
