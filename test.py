@@ -29,7 +29,6 @@ try:
         stock_low_price = float(arr[0])
         if (stock_open_price and stock_high_low_price):
             print(f"Current Price: {stock_open_new_price}, {stock_high_price}, {stock_low_price}")
-            print(call_prediction(float(stock_open_new_price), float(stock_high_price), float(stock_low_price), float(stock_new_volume)))
         else:
             print("Stock price not found.")
         
