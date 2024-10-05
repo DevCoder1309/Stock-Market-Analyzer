@@ -19,7 +19,7 @@ try:
         stock_open_price = soup.find('p', {'id': 'BSE_OPEN_PRICE'})
         stock_high_low_price = soup.find('p', {'id': 'BSE_TODAYS_HIGH_LOW'})
 
-        if stock_open_price:
+        if (stock_open_price:
             stock_open_new_price = stock_open_price.text.strip()
             if stock_open_new_price != old_price:
                 # Any Changes chall be reflected here and price prediction should be placed here
