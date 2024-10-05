@@ -24,9 +24,9 @@ try:
             if stock_open_new_price != old_price:
                 # Any Changes chall be reflected here and price prediction should be placed here
                 print(f"Current Price: {stock_open_new_price}")
-                old_price = current_price
+                old_price = stock_open_new_price
             else:
-                print(f"Price remains the same: {current_price}")
+                print(f"Price remains the same: {stock_open_new_price}")
         else:
             print("Stock price not found.")
         
