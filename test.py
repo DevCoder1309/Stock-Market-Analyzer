@@ -18,6 +18,7 @@ try:
         stock_high_low_price = soup.find('p', {'id': 'BSE_TODAYS_HIGH_LOW'})
 
         stock_open_new_price = stock_open_price.text.strip()
+        stock_open_new_high_low = stock_high_low_price.text.strip()
 
         if (stock_open_price and stock_high_low_price):
             
