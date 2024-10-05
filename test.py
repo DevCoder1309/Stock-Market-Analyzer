@@ -17,7 +17,6 @@ try:
         soup = BeautifulSoup(driver.page_source, 'html.parser')
 
         stock_open_price = soup.find('p', {'id': 'BSE_OPEN_PRICE'})
-        stock_current_price = soup.find('h1', {'id': 'BSE_PRICE'})
         stock_high_low_price = soup.find('p', {'id': 'BSE_TODAYS_HIGH_LOW'})
 
         if stock_open_price:
