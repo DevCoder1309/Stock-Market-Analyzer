@@ -16,11 +16,11 @@ try:
         
         soup = BeautifulSoup(driver.page_source, 'html.parser')
 
-        stock__price = soup.find('p', {'id': 'BSE_OPEN_PRICE'})
+        stock_open_price = soup.find('p', {'id': 'BSE_OPEN_PRICE'})
         stock_current_price = soup.find('h1', {'id': 'BSE_PRICE'})
 
         if stock_price:
-            stock_open_new_price = stock_price.text.strip()
+            stock_open_new_price = stock_open_price.text.strip()
             if current_price != old_price:
                 # Any Changes chall be reflected here and price prediction should be placed here
                 print(f"Current Price: {current_price}")
