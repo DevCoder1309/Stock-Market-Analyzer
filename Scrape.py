@@ -30,6 +30,6 @@ try:
     else:
         print("Stock price not found.")
         
-        time.sleep(60) 
+    time.sleep(60) 
 finally:
     driver.quit() 
