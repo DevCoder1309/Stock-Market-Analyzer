@@ -18,17 +18,17 @@ try:
     stock_volume = soup.find('p', {'id': 'BSE_VOLUME'})
 
     stock_open_new_price = stock_open_price.text.strip()
-        stock_open_new_high_low = stock_high_low_price.text.strip()
-        stock_new_volume = stock_volume.text.strip()
+    stock_open_new_high_low = stock_high_low_price.text.strip()
+    stock_new_volume = stock_volume.text.strip()
 
-        arr = list(stock_open_new_high_low.split(' / '))
-        print(arr)
-        stock_high_price = float(arr[1])
-        stock_low_price = float(arr[0])
-        if (stock_open_price and stock_high_low_price):
-            print(f"Current Price: {stock_open_new_price}, {stock_high_price}, {stock_low_price}")
-        else:
-            print("Stock price not found.")
+    arr = list(stock_open_new_high_low.split(' / '))
+    print(arr)
+    stock_high_price = float(arr[1])
+    stock_low_price = float(arr[0])
+    if (stock_open_price and stock_high_low_price):
+        print(f"Current Price: {stock_open_new_price}, {stock_high_price}, {stock_low_price}")
+    else:
+        print("Stock price not found.")
         
         time.sleep(60) 
 finally:
