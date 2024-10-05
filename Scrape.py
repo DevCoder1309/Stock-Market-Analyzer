@@ -25,4 +25,5 @@ try:
     else:
         print("Stock price not found.")
 finally:
-    driver.quit() 
+    
+    # driver.quit() 
