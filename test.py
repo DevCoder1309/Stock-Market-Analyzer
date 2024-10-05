@@ -22,7 +22,7 @@ try:
 
         arr = list(stock_open_new_high_low.split(' / '))
         print(arr)
-        stock_high
+        stock_high_price = arr[1]
         if (stock_open_price and stock_high_low_price):
             print(f"Current Price: {stock_open_new_price}, {stock_open_new_high_low}")
         else:
