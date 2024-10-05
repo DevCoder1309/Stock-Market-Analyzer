@@ -21,6 +21,7 @@ try:
 
         if (stock_open_price and stock_high_low_price):
             stock_open_new_price = stock_open_price.text.strip()
+            stock
             if stock_open_new_price != old_price:
                 # Any Changes chall be reflected here and price prediction should be placed here
                 print(f"Current Price: {stock_open_new_price}")
