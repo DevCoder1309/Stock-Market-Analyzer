@@ -1,7 +1,7 @@
 from selenium import webdriver
 from bs4 import BeautifulSoup
 import time
-from stock_analysis_pred.ipynb import call_
+from stock_analysis_pred.ipynb import call_prediction
 
 driver = webdriver.Chrome()  
 
