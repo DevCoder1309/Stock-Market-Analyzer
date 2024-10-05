@@ -21,7 +21,7 @@ try:
 
         if stock_open_price:
             stock_open_new_price = stock_open_price.text.strip()
-            if(eval(stock_open_new_price)):
+            if(eval(stock_open_new_price) < ):
                 
             if stock_open_new_price != old_price:
                 # Any Changes chall be reflected here and price prediction should be placed here
