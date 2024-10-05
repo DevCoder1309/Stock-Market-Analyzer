@@ -29,7 +29,5 @@ try:
         print(f"Current Price: {stock_open_new_price}, {stock_high_price}, {stock_low_price}")
     else:
         print("Stock price not found.")
-        
-    time.sleep(60) 
 finally:
     driver.quit() 
